@@ -19,19 +19,9 @@ function Home() {
               <span className="text-accent">Dimas Samiaji</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Hello! I'm Dimas, a recent Public Relations graduate with a
-              specialization in communications, currently embarking on an
-              exciting career shift into the world of programming. My journey
-              into tech began with a deep-seated interest in technology and a
-              passion for creating innovative solutions through code.
-              <br />I decided to transition into programming because of my
-              growing interest and passion for technology, the numerous career
-              opportunities in the tech industry, and my desire to solve
-              problems creatively. Additionally, the flexibility and potential
-              for positive impact in tech are highly appealing. My experience in
-              public relations has equipped me with valuable skills like
-              effective communication and project management, which I believe
-              are highly transferable to programming.
+              A recent Public Relations graduate with a specialization in
+              communications, currently embarking on an exciting career shift
+              into the world of programming.
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
