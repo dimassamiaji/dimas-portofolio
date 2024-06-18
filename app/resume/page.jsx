@@ -33,7 +33,7 @@ const about = {
 
 const experience = {
   title: "My experience",
-  description: "Lorem ipsum dolor sit amet",
+  description: "Here my experience",
   items: [
     {
       company: "Tech Solution",
@@ -82,7 +82,7 @@ const experience = {
 
 const education = {
   title: "My education",
-  description: "Lorem ipsum dolor sit amet",
+  description: "Here my education",
   items: [
     {
       institution: "Purwadhika Digital School",
@@ -105,7 +105,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skill",
-  description: "Lorem ipsum dolor sit amet",
+  description: "Here my skill",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -134,6 +134,18 @@ const skills = {
     {
       icon: <FaNodeJs />,
       name: "node.js",
+    },
+  ],
+};
+
+const certificate = {
+  title: "My certificate",
+  description: "Here my certificate",
+  items: [
+    {
+      institution: "Purwadhika Digital School",
+      field: "Full Stack Web Development Bootcamp",
+      duration: "November 2023- March 2024",
     },
   ],
 };
@@ -167,6 +179,7 @@ function Resume() {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="certificate">Certificate</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
@@ -265,6 +278,38 @@ function Resume() {
                     );
                   })}
                 </ul>
+              </div>
+            </TabsContent>
+
+            {/* certificate */}
+            <TabsContent value="certificate" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{certificate.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {certificate.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {certificate.items.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
+                        >
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.field}
+                          </h3>
+                          <div className="flex items-center gap-3">
+                            {/* dot */}
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <p className="text-white/60">{item.institution}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
