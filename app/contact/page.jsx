@@ -12,7 +12,7 @@ function Home() {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <h3 className="text-4xl text-accent">Let's work together</h3>
+            <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
             <p className="max-w-[500px] mb-9 text-white/80">
               Contact me if you have any inquiries
             </p>

@@ -16,7 +16,12 @@ function Header() {
           {/* <h1 className="text-4xl font-semibold">
             Dims<span className="text-accent">.</span>
           </h1> */}
-          <Image src="/assets/Logo-red edit.png" width={50} height={50} />
+          <Image
+            src="/assets/Logo-red edit.png"
+            width={50}
+            height={50}
+            alt="Logo Navbar"
+          />
         </Link>
 
         {/* desktop nav & hire me button */}
