@@ -25,7 +25,7 @@ function Home() {
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="">
+              <Link href="https://drive.google.com/file/d/1Fefsu1yhyl7vaEd-IQw6CZiPwCSp0oHX/view">
                 <Button
                   variant="outline"
                   size="lg"
