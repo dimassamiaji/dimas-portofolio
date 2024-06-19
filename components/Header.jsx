@@ -5,15 +5,18 @@ import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
+import Image from "next/image";
+
 function Header() {
   return (
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Dimas<span className="text-accent">.</span>
-          </h1>
+          {/* <h1 className="text-4xl font-semibold">
+            Dims<span className="text-accent">.</span>
+          </h1> */}
+          <Image src="/assets/Logo-red edit.png" width={50} height={50} />
         </Link>
 
         {/* desktop nav & hire me button */}

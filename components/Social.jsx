@@ -1,7 +1,16 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { SiGmail, SiWhatsapp } from "react-icons/si";
 
 const socials = [
+  {
+    icon: <SiGmail />,
+    path: "mailto:dimassamji@gmail.com",
+  },
+  {
+    icon: <SiWhatsapp />,
+    path: "https://wa.me/628111670079",
+  },
   { icon: <FaGithub />, path: "https://github.com/dimassamiaji" },
   {
     icon: <FaLinkedinIn />,
