@@ -24,21 +24,38 @@ const projects = [
     num: "01",
     category: "frontend",
     title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/Capshut1.png",
-    live: "",
-    github: "",
+    description:
+      "Capshut is a photography services company focused on providing high-quality photography services for various needs. In this project, i committed to building a modern and attractive company profile website, featuring a professionally designed front end and user interface to introduce Capshut to potential clients.",
+    stack: [
+      { name: "Javascript" },
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+    ],
+    image: "/assets/work/Project1.png",
+    live: "https://capshut-compro.vercel.app/",
+    github: "https://github.com/dimassamiaji/Capshut-Compro",
   },
   {
     num: "02",
     category: "fullstack",
     title: "project 2",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/Gotix1.png",
+    description:
+      "Gotix is a ticketing web/application that make it easier for users or customers to buy tickets for their favorite music concerts online anytime and anywhere. Additionally, to facilitate event organizers in selling concert tickets online through a user-friendly website.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+      { name: "Axios" },
+      { name: "Redux.js" },
+      { name: "MySql" },
+      { name: "Json Web Token (JWT)" },
+      { name: "React.js" },
+      { name: "Javascript" },
+      { name: "Typescript" },
+    ],
+    image: "/assets/work/Project2.png",
     live: "",
-    github: "",
+    github: "https://github.com/dimassamiaji/Miniproject-Ecommerce",
   },
 ];
 
@@ -77,7 +94,7 @@ function Work() {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap mt-4">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -93,18 +110,20 @@ function Work() {
               {/* button */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 {/* github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>

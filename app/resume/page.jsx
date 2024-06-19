@@ -2,7 +2,12 @@
 
 import { Factory } from "lucide-react";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
 
 // about data
 const about = {
@@ -110,6 +115,14 @@ const skills = {
     {
       icon: <FaNodeJs />,
       name: "node.js",
+    },
+    {
+      icon: <SiRedux />,
+      name: "redux.js",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "typescript",
     },
   ],
 };
