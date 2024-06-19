@@ -36,44 +36,20 @@ const experience = {
   description: "Here my experience",
   items: [
     {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
+      company: "PT. Bank Negara Indonesa (Persero) Tbk.",
+      position: "Merchant Support",
+      duration: "2020 - 2023",
     },
     {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
+      company: "PT. Kahyangan Andalan Abadi",
+      position: "Freelance as Merchandiser",
+      duration: "July 2019 and September 2019",
     },
     {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
-    },
-    {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
-    },
-    {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
-    },
-    {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
-    },
-    {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
-    },
-    {
-      company: "Tech Solution",
-      position: "Full Stack Developer",
-      duration: "2022-present",
+      company:
+        "Ministry of Research, Technology and Higher Education Indonesia",
+      position: "Internship as Public Relations",
+      duration: "June 2014 - August 2014",
     },
   ],
 };
@@ -145,7 +121,7 @@ const certificate = {
     {
       institution: "Purwadhika Digital School",
       field: "Full Stack Web Development Bootcamp",
-      duration: "November 2023- March 2024",
+      duration: "November 2023 - March 2024",
     },
   ],
 };
